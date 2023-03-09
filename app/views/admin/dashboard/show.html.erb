@@ -1,14 +1,16 @@
+<br>
+
 <h1>Admin Dashboard</h1>
 
 <br>
 
-<h4> Total number of products: </h4>
+<h4> Total number of products: </h4> 
   <h3><strong><%= @total_quantity %></strong></h3>
+  <%= link_to 'See all products', [:admin, :products], class: "nav-link" %>
 
 <br>
 
 <h4> Total number of categories: </h4>
 <h3><strong><%= @total_categories %></strong></h3>
 
-<%= link_to 'See all products', [:admin, :products], class: "nav-link" %>
 
