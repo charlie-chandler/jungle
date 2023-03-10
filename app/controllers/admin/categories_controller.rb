@@ -2,11 +2,6 @@ class Admin::CategoriesController < ApplicationController
 
   def index
     @categories = Category.order(id: :desc).all
-    # @products_in_category = Product.where(category_id: categories.id).count
-    puts "///////////////////"
-    # puts @products_in_category
-    puts "///////////////////"
-
   end
 
   def new
@@ -21,6 +16,12 @@ class Admin::CategoriesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def category_params
+    params.require(:category).permit(
+      :name
+    )
   end
 
 end
