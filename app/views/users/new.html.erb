@@ -3,7 +3,8 @@
 
 <%= bootstrap_form_for :user, url: '/users' do |f| %>
 
-  <%= f.text_field :name, floating: true %>
+  <%= f.text_field :first_name, floating: true %>
+  <%= f.text_field :last_name, floating: true %>
   <%= f.text_field :email, floating: true %>
   <%= f.password_field :password, floating: true %>
   <%= f.password_field :password_confirmation, floating: true %>
