@@ -7,10 +7,10 @@ describe('product testing', () => {
     cy.visit('localhost:3000')
   });
 
-  it ('clicks on Swamp Root and visits its product page', () => {
-    cy.get('.products > :nth-child(7)').click()
+  it ('clicks on Scented Blade and visits its product page', () => {
+    cy.get('.products > :nth-child(1)').click()
     cy.url().should('include', '/products/')
-    cy.get(':nth-child(2) > h1').should('have.text', 'Swamp Root')
+    cy.get(':nth-child(2) > h1').should('have.text', 'Scented Blade')
   });
   
 })
