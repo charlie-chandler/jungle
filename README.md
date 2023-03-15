@@ -52,7 +52,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Preview
 
+# Jungle home page with sold out badge
 !["Jungle home page with sold out badge"](https://github.com/cchand-vanc/jungle/blob/master/docs/products.png?raw=true)
+
+# Admin > Products page
 !["Admin > Products page"](https://github.com/cchand-vanc/jungle/blob/master/docs/admin.png?raw=true)
+
+# My Cart
 !["My Cart"](https://github.com/cchand-vanc/jungle/blob/master/docs/my_cart.png?raw=true)
-!["Tweeter feed on desktop"](https://github.com/cchand-vanc/tweeter/blob/master/docs/desktop_tweeter.png?raw=true)
+
+# Order Summary
+!["Order Summary"](https://github.com/cchand-vanc/jungle/blob/master/docs/order_confirmation.png?raw=true)
