@@ -18,44 +18,6 @@ Implemented the following features:
 • Cypress
 • Bootstrap
 
-## Example Code
-
-```
-class Admin::ProductsController < ApplicationController
-
-  http_basic_authenticate_with :name => ENV['HTTP_BASIC_AUTH_USERNAME'], :password => ENV['HTTP_BASIC_AUTH_PASSWORD']
-
-  def new
-    @product = Product.new
-  end
-
-  def create
-    @product = Product.new(product_params)
-
-    if @product.save
-      redirect_to [:admin, :products], notice: 'Product created!'
-    else
-      render :new
-    end
-  end
-
-  private
-
-  def product_params
-    params.require(:product).permit(
-      :name,
-      :description,
-      :category_id,
-      :quantity,
-      :image,
-      :price
-    )
-  end
-
-end 
-```
-
-
 ## Setup
 
 1. Fork and Clone
@@ -86,3 +48,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - PostgreSQL 9.x
 - Stripe
 - Webpack 3.11
+
+
+## Preview
+
+!["Jungle home page with sold out badge"](https://github.com/cchand-vanc/jungle/blob/master/docs/products.png?raw=true)
+!["Admin > Products page"](https://github.com/cchand-vanc/jungle/blob/master/docs/admin.png?raw=true)
+!["My Cart"](https://github.com/cchand-vanc/jungle/blob/master/docs/my_cart.png?raw=true)
+!["Tweeter feed on desktop"](https://github.com/cchand-vanc/tweeter/blob/master/docs/desktop_tweeter.png?raw=true)
