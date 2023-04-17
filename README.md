@@ -7,8 +7,11 @@ The focus of the project was to learn how to use a new language and framework wi
 Implemented the following features:
 
 • **User Authentication:** User's login details are validated for uniqueness, and passwords are encrypted using BCrypt.
+
 • **Sold Out Badge:** If item's quantity reaches 0, *'Add to Cart'* button will be replaced by *'Sold Out'* badge.
+
 • **Admin Categories:** Admin must be authenticated before accessing the admin page. Admins can add or delete new product categories.
+
 • **Enhanced Order Page:** Users are shown an order summary with product description, total price, and receipt email recipient.
 
 ## Stack
